@@ -1,1 +1,3 @@
-Hello, world!
+/usr/share/dict/words must be present for the read.py script to work.
+
+Run read.py first to generate weights.js, which createword.py will use to generate gibberish English words.
