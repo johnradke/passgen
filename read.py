@@ -20,8 +20,11 @@ for word in wordsfile:
 
 wordsfile.close()
 
+weightstxt = json.dumps(tripletWeights)
+weightstxt = 'tripletWeights = ' + weightstxt
 weightsfile = open('weights.js', 'w')
-json.dump(tripletWeights, weightsfile)
+weightsfile.write(weightstxt)
+weightsfile.close();
 
 print '{0} triplets written.'.format(len(tripletWeights))
 
