@@ -5,7 +5,7 @@
 
 $(document).ready(function() {
 	$('a').click(function(event) {
-		alert(newWord(8));
+		$('div').html(newWord(20));
 	});
 });
 
