@@ -43,6 +43,7 @@ $(document).ready(function() {
 	if (cookie) {
 		countselect.val(cookie.split("*")[0]);
 		lengthselect.val(cookie.split("*")[1]);
+		countselect.trigger("change");
 	}
 	
 	$('select').change(function() {
