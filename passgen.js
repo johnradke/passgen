@@ -39,7 +39,11 @@ $(document).ready(function() {
 		lengthselect.append($('<option>', {value: i}).text(i));
 	}
 	
-	alert($.cookie('gimmepasscookie'));
+	var cookie = $.cookie('gimmepasscookie');
+	if (cookie) {
+		countselect.val(cookie.split("*")[0]);
+		lengthselect.val(cookie.split("*")[1]);
+	}
 	
 	$('select').change(function() {
 		$.cookie('gimmepasscookie', countselect.val() + '*' + lengthselect.val());
