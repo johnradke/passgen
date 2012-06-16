@@ -1,0 +1,32 @@
+body {
+	padding: 40px;
+	text-align: center;
+}
+
+p {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.password {
+	margin: 5px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.btn-large {
+	font-size: 30px;
+}
+
+select {
+	font-size: 30px;
+	font-weight: bold;
+	height: 40px;
+	width: 80px;
+}
+
+button {
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
