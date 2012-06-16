@@ -20,6 +20,9 @@ for word in wordsfile:
 		trip = word[i:i+3]
 		if (not alternatesHands(trip)):
 			continue
+			
+		if (trip == 'ngn'):
+			print word
 		
 		if (trip not in tripletWeights):
 			tripletWeights[trip] = 1

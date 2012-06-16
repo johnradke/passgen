@@ -4,8 +4,45 @@
  */
 
 $(document).ready(function() {
-	$('a').click(function(event) {
-		$('div').html(newWord(20));
+	$('#go').click(function(event) {
+		var passdiv = $('#passwords');
+		passdiv.empty();
+		
+		var count = $('#count').val();
+		var length = $('#length').val();
+		for(var i = 0; i < count; i++)
+		{
+			passdiv.append($('<div>').addClass('password').text(newWord(length)));
+		}
+	});
+	
+	var countselect = $('#count');
+	for (var i = 1; i <= 24; i++)
+	{
+		countselect.append($('<option>', {value: i}).text(i));
+	}
+	
+	countselect.change(function() {
+		if (this.value === '1') {
+			$('#passwordtext').text('password');
+			$('#isaretext').text('is');
+		}
+		else {
+			$('#passwordtext').text('passwords');
+			$('#isaretext').text('are');
+		}
+	});
+
+	var lengthselect = $('#length');
+	for (var i = 6; i <= 24; i++)
+	{
+		lengthselect.append($('<option>', {value: i}).text(i));
+	}
+	
+	alert($.cookie('gimmepasscookie'));
+	
+	$('select').change(function() {
+		$.cookie('gimmepasscookie', countselect.val() + '*' + lengthselect.val());
 	});
 });
 

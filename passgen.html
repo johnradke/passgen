@@ -5,14 +5,25 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Generate Passwords</title>
+	<link href='assets/css/bootstrap.css' rel='stylesheet'>
+	<link href='assets/css/passgen.css' rel='stylesheet'>
 </head>
 <body>
-	<h1>HI</h1>
-	<script src='ext/jquery-1.7.1.js'></script>
-	<script src='weights.js'></script>
-	<script src='passgen.js'></script>
-	<a href='#' id='alert'>blah blah</a>
-	<div></div>
-	<input type=text></input>
+	<div class='hero-unit'>
+		<h1>gimmepass</h1>
+	</div>
+	
+	<p>Gimme 
+		<select id='count'></select>
+		<span id='passwordtext'>password</span> that <span id='isaretext'>is</span>
+		<select id='length'></select>
+		characters long.
+	</p>
+	<button class='btn btn-large btn-success' id='go'>Go!</button>
+	<div id='passwords'></div>
+<script src='assets/js/jquery-1.7.1.js'></script>
+<script src='assets/js/jquery.cookie.js'></script>
+<script src='weights.js'></script>
+<script src='passgen.js'></script>
 </body>
 </html>
