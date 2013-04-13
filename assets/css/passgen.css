@@ -1,31 +1,39 @@
-body {
+body
+{
 	padding: 40px;
 	text-align: center;
 }
 
-p {
+p
+{
 	font-size: 30px;
 	font-weight: bold;
 }
 
-.password {
+.password
+{
 	margin: 5px;
 	text-align: center;
 	font-weight: bold;
 }
 
-.btn-large {
+.btn-large
+{
 	font-size: 30px;
 }
 
-select {
+select,
+input[type="text"]
+{
 	font-size: 30px;
 	font-weight: bold;
 	height: 40px;
 	width: 80px;
+	text-align: right;
 }
 
-button {
+button
+{
 	font-weight: bold;
 	margin-top: 20px;
 	margin-bottom: 20px;

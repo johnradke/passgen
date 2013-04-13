@@ -13,8 +13,16 @@
 		<h1>gimmepass</h1>
 	</div>
 	
-	<p>Gimme 
-		<select id='count'></select>
+	<p style="display:inline">Gimme 
+		<table style="display:inline-table">
+			<tr>
+				<td rowspan="2"><input type="text" id='count'></input></td>
+				<td><button class='btn'>+</button></td>
+			</tr>
+			<tr>
+				<td><button class='btn'>-</button></td>
+			</tr>
+		</table>
 		<span id='passwordtext'>password</span> that <span id='isaretext'>is</span>
 		<select id='length'></select>
 		characters long.
